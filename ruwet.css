@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+
+/* ------------*/
+
+
+
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------*/
+
+
+
+
+body {
+    background-color: lightgrey;
+    background-image: url(desert.png);
+    background-size: contain;
+}
+.container {
+    width: 1000px;
+    margin: auto;
+    background-color: lightslategray;
+}
+
+.header {
+    padding: 20px;
+    background-color: rgb(112, 67, 185);
+}
+
+.header .judul {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'Just Another Hand', cursive;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(112, 213, 216);
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header li :hover {
+    color: white;
+}
+
+.gambar {
+    height: 280px;
+    background-image: url(unta.png);
+    background-size: cover;
+    background-position: 0 -240px;
+}
+
+.main {
+    width: 700px;
+    padding: 20px;
+    background-color: lightslategray;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: -5px;
+    font-family: 'Just Another Hand', cursive;
+}
+
+.main .penulis {
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.main .penulis a {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(185, 253, 255);
+}
+
+.main .penulis a:hover {
+    color: rgb(253, 123, 63);
+    
+}
+
+.main p {
+    font-size: 14px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* sidebar */
+
+
+.sidebar{
+    width: 300px;
+    padding: 20px;
+    background-color: lightslategray;
+    border-left: 1px solid;
+    border-bottom: 1px solid; 
+    float: right;
+    box-sizing: border-box;
+}
+
+.sidebar img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.sidebar h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Just Another Hand', cursive;
+}
+
+.sidebar p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Footer */
+
+
+.footer {
+    background-color: black;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .copy {
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
+ 
